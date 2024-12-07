@@ -1,0 +1,28 @@
+cloudflare:
+  api_token: "cflr_api_token"
+  zone_id: "zone-id"
+  record_id: "record-id"
+  
+servers:
+  main_ip: "123.123.123.123"
+  fallback_ip: "124.124.124.124"
+  websocket_url: "ws://lobbyplsocket:8080/status"
+
+failover:
+  cooldown_seconds: 300  
+  retry_attempts: 3     
+  retry_delay_seconds: 10
+
+websocket:
+  max_reconnect_attempts: 5
+  base_reconnect_delay: 1  
+  heartbeat_interval: 30 
+
+notifications:
+  webhook_url: "https://discord.com/api/webhooks/webhookurl"
+
+logging:
+  file_path: "logs/failover.log"
+  max_size_mb: 10
+  backup_count: 5
+  level: "INFO"
