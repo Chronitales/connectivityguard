@@ -4,7 +4,7 @@
 Le système surveille en permanence le serveur via une connexion WebSocket. Si le serveur ne répond plus, il va :
 1. Essayer de se reconnecter plusieurs fois (on sait jamais, ça peut être juste un petit lag)
 2. Si ça marche toujours pas, il change l'IP dans Cloudflare pour pointer vers le serveur de backup
-3. M'envoie un message sur Discord avec le webhook pour prévenir
+3. Envoie un message sur Discord avec le webhook pour prévenir
 4. Continue de surveiller pour rebasculer sur le serveur principal quand il remarche
 
 ## 
